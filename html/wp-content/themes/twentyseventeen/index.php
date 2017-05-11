@@ -21,6 +21,7 @@ get_header(); ?>
 	<?php if ( is_home() && ! is_front_page() ) : ?>
 		<header class="page-header">
 			<h1 class="page-title"><?php single_post_title(); ?></h1>
+			<h1>Test Test Test</h1>
 		</header>
 	<?php else : ?>
 	<header class="page-header">

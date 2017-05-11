@@ -46,8 +46,16 @@ get_header(); ?>
 				twentyseventeen_front_page_section( null, $i );
 			}
 
+
 	endif; // The if ( 0 !== twentyseventeen_panel_count() ) ends here. ?>
 
+	<?php 
+		if(is_page('home')){
+			echo do_shortcode('[google_maps id="75"]');
+		}else{
+			echo 'There is something wrong with the is_page function please check your code.';
+		}
+ 	?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
